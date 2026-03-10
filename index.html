@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEKO_OMEN FREE GATE</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--s:#111119;--s2:#181822;--bd:#1e1e2e;--ac:#e84393;--ac2:#fd79a8;--gl:rgba(232,67,147,.3);--tx:#e8e8f0;--mt:#6c6c8a;--ok:#00b894;--yt:#ff0000}
+body{background:var(--bg);color:var(--tx);font-family:'Rajdhani',sans-serif;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 600px 400px at 20% 30%,rgba(232,67,147,.07) 0%,transparent 70%),radial-gradient(ellipse 500px 500px at 80% 70%,rgba(108,92,231,.05) 0%,transparent 70%)}
+body::after{content:'';position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(232,67,147,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(232,67,147,.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.w{position:relative;z-index:1;max-width:600px;margin:2rem auto;padding:0 1rem}
+.c{background:var(--s);border:1px solid var(--bd);border-radius:20px;overflow:hidden;box-shadow:0 0 80px rgba(0,0,0,.6),0 0 40px var(--gl);animation:fu .8s ease-out;margin-bottom:1.5rem}
+@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hd{padding:2rem 2rem 1.2rem;text-align:center;position:relative}
+.hd::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--ac),var(--ac2),var(--ac),transparent);animation:sh 3s linear infinite}
+@keyframes sh{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.av{width:80px;height:80px;border-radius:16px;margin:0 auto 1rem;box-shadow:0 0 30px var(--gl);animation:fl 3s ease-in-out infinite;object-fit:cover;display:block}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+h1{font-family:'Orbitron',sans-serif;font-size:1.4rem;font-weight:900;letter-spacing:2px;background:linear-gradient(135deg,var(--tx) 30%,var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.su{color:var(--mt);font-size:.9rem;margin-top:.3rem;letter-spacing:1px}
+.bg{display:inline-block;margin-top:.5rem;padding:.2rem .7rem;border-radius:20px;background:rgba(232,67,147,.1);border:1px solid rgba(232,67,147,.2);color:var(--ac2);font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+.bd{padding:.5rem 2rem 1.5rem}
+.st{padding:1rem 0;border-bottom:1px solid var(--bd);transition:all .4s}
+.st:last-child{border-bottom:none}
+.st.lk{opacity:.25;pointer-events:none;filter:grayscale(.5)}
+.st.dn .sn{background:var(--ok);box-shadow:0 0 12px rgba(0,184,148,.4)}
+.sh{display:flex;align-items:center;gap:.7rem;margin-bottom:.3rem}
+.sn{width:26px;height:26px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',sans-serif;font-size:.65rem;font-weight:700;color:#fff;flex-shrink:0;position:relative;transition:all .3s}
+.st.dn .sn span{opacity:0}
+.st.dn .sn::after{content:'\2713';position:absolute;color:#fff;font-size:.75rem;font-weight:700}
+.sl{font-size:1rem;font-weight:600;letter-spacing:.5px}
+.sd{color:var(--mt);font-size:.82rem;line-height:1.4;margin-left:calc(26px + .7rem)}
+.br{margin-left:calc(26px + .7rem);margin-top:.5rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.b{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border:none;border-radius:10px;font-family:'Rajdhani',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.5px;cursor:pointer;transition:all .25s;text-decoration:none}
+.b svg{width:15px;height:15px;flex-shrink:0}
+.by{background:var(--yt);color:#fff;box-shadow:0 3px 12px rgba(255,0,0,.2)}
+.by:hover{background:#cc0000;transform:translateY(-1px)}
+.bc{background:transparent;color:var(--ac2);border:1px solid rgba(232,67,147,.4)}
+.bc:hover:not(:disabled){background:rgba(232,67,147,.08)}
+.bc:disabled{opacity:.35;cursor:not-allowed}
+.ms{font-size:.78rem;padding:.3rem .6rem;border-radius:6px;display:none;align-items:center;gap:.3rem}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.ms.v{display:inline-flex;animation:fi .3s}
+.ms.er{background:rgba(255,107,107,.08);color:#ff6b6b;border:1px solid rgba(255,107,107,.15)}
+.ms.wt{background:rgba(253,121,168,.08);color:var(--ac2);border:1px solid rgba(253,121,168,.15)}
+.ms.go{background:rgba(0,184,148,.08);color:var(--ok);border:1px solid rgba(0,184,148,.15)}
+.sp{display:inline-block;width:13px;height:13px;border:2px solid var(--ac);border-top-color:transparent;border-radius:50%;animation:spi .7s linear infinite;flex-shrink:0}
+@keyframes spi{to{transform:rotate(360deg)}}
+.cd{font-family:'Orbitron',sans-serif;font-weight:700;font-size:.8rem}
+#cat{display:none}
+#cat.v{display:block}
+.ct{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;text-align:center;margin:1rem 0 .8rem;letter-spacing:2px;background:linear-gradient(135deg,var(--tx) 30%,var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cc{text-align:center;color:var(--mt);font-size:.8rem;margin-bottom:1rem}
+.tc{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:.8rem 1rem;margin-bottom:.6rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem;transition:all .25s}
+.tc:hover{border-color:rgba(232,67,147,.3);box-shadow:0 0 15px rgba(232,67,147,.06)}
+.tn{font-weight:600;font-size:.9rem;letter-spacing:.3px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tt{font-size:.65rem;color:var(--mt);padding:.1rem .4rem;border-radius:5px;background:var(--s2);border:1px solid var(--bd);white-space:nowrap;flex-shrink:0}
+.dl{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;padding:.4rem .8rem;border-radius:8px;font-family:'Rajdhani',sans-serif;font-size:.78rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:.25rem;transition:all .25s;white-space:nowrap;flex-shrink:0;box-shadow:0 2px 8px var(--gl)}
+.dl:hover{transform:translateY(-1px);box-shadow:0 4px 14px var(--gl)}
+.dl svg{width:12px;height:12px}
+.ft{text-align:center;padding:1.2rem 2rem;border-top:1px solid var(--bd)}
+.ft p{color:var(--mt);font-size:.75rem;letter-spacing:.5px}
+.ft a{color:var(--ac2);text-decoration:none}
+.ft a:hover{text-decoration:underline}
+@media(max-width:560px){.w{margin:1rem auto}.hd{padding:1.5rem 1.2rem 1rem}.bd{padding:.5rem 1.2rem 1.2rem}h1{font-size:1.15rem}.br{margin-left:0}.sd{margin-left:0}.tc{flex-wrap:wrap}.tn{white-space:normal}}
+</style>
+</head>
+<body>
+<div class="w">
+ <div class="c">
+  <div class="hd">
+   <img class="av" src="https://i.imgur.com/hHdnKBV.png" alt="Neko_Omen" onerror="this.style.display='none'">
+   <h1>NEKO_OMEN FREE GATE</h1>
+   <p class="su">Free Roblox Tools &amp; Assets</p>
+   <span class="bg">Subscriber Only</span>
+  </div>
+  <div class="bd">
+   <div class="st" id="s1">
+    <div class="sh"><div class="sn"><span>1</span></div><span class="sl">Subscribe to Neko_Omen</span></div>
+    <p class="sd">Subscribe on YouTube to unlock all downloads below.</p>
+    <div class="br">
+     <a class="b by" id="sb" href="https://www.youtube.com/@Neko_Omen?sub_confirmation=1" target="_blank" rel="noopener" onclick="S()">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12c0 2 .2 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8 0-2-.2-3.9-.5-5.8zM9.8 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>Subscribe</a>
+     <button class="b bc" id="cb" disabled onclick="C()">I've Subscribed &#10003;</button>
+    </div>
+    <div class="br" style="margin-top:.3rem"><div class="ms" id="m1"></div></div>
+   </div>
+   <div class="st lk" id="s2">
+    <div class="sh"><div class="sn"><span>2</span></div><span class="sl">Access Downloads</span></div>
+    <p class="sd">All tools unlocked! Browse and download below.</p>
+   </div>
+  </div>
+ </div>
+
+ <div id="cat">
+  <h2 class="ct">FREE TOOLS CATALOG</h2>
+  <p class="cc">42 tools available for subscribers</p>
+
+  <div class="tc"><span class="tn">NEKOAUDIOWEB</span><span class="tt">WEB APP</span><a class="dl" href="https://nekoomenaudioweb-production.up.railway.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open</a></div>
+
+  <div class="tc"><span class="tn">NEKOCARRYV1</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/124754659554825/Multiple-Carry-Sync-V2-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOCARRYV2</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/xx1cr57r82a764c/CarryV2+by+Neko_Omen.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOCARRYV3 LITE</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/2b001u3x40keue6/(PROTECT+LITE)+NekoCarryV3.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOEMOTEV1</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/nq01ze2t4x2zmpx/Emote+System+by+Neko_Omen+(1).rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOEMOTEV2</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/73716335524617/EmoteSytem-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKO NPC ORANG</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/82927882240369/NPCORANG" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOOWNERNPC V1</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/99396310302629/OwnerNPC" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOOWNERNPC V2</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/124301956678570/OwnerNPC-PT2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOAVACLONE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/83939492547885/Cloning-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOAVACLONEV2</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/100377148696165/Cloning-NekoOmen-Respawn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKODIALOGUE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/81319202197732/%23%23%23%23%23" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOESSENTIALS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/73800845976589/NekoKit-Free" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOSKY</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/wu54jdk49ftf2t9/NekoSkySystem.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOLOADINGSCREEN</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/83620600895411/NekoLoading" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOJAR</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/b7wh7ta3o70uexy/(FREE)+NekoJar+Refined.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOMUSICV1</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/112399731456580/MusicTopbarFIX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOMUSICV2</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/lo1a2mei6vcvdys/Fix+Scroll+MusicPlayer+V2+Neko_Omen.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOSOFTSHUTDOWN</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/138923084148867/Soft-Shutdown-Refined-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOSPAWNVEHICLE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/139498258679967/VehicleSpawn-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOGLOBALANNOUNCE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/71658509561641/SimpleGlobalAnnounce-Neko" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOJOINCOMMUNITY</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/96057859094497/JoinCommunity-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOOWNERNOTIF</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/70390593182462/NekoOmen-OwnerNotif" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOBAR</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/cw3j8oq7x9n126u/Neko_Omen+EasyBar+Explain.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOICESKATING</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/127790717959840/IceSkate-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKODUALGLOWSTICK</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/105867118373297/Protect-NekoOmen-Glowstick-Refined" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOCUSTOMFOOTSTEP</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/97552536755801/NekoOmen-Custom-Footstep" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOMOUNTKITLITE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/89107043311949/Mount-Kit-Lite-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOMOUNTKITLITE (Avadoll Trap)</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/78804901143495/Avadoll-Trap-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOTIPSCHAT</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/116135144714766/NekoOmen-Tips-Chat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOADVANCEDCHATTAGS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/112556461052199/NekoOmen-AdvancedChatTags" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOJOINLEFTCHATTAGS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/111512759694847/NekoOmen-Join-Chat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOTITLEMANAGER</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/104553991376152/NekoOmen-RoleManager" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOJUMPBUTTON</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/84916144402521/NekoOmen-JumpMobile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOAFKSYSTEM</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/119421601953341/AFK-FREE-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOHORSESYSTEM</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/75237889271433/Horse-System-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOJUMPSCARE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/120930115588781/Jumpscare-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOAVABOOTH</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/m9joxfrrleayrbp/AvaBooth+Neko_Omen.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOAURASHOP</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/135826416485119/Shop-Aura-Refined-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOWINGS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/111185622689825/Wings-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOMORPH</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/136626526576404/Morph-System-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOBACKPACK</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/115896122614027/BackpackSystem-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOPANDA</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/114266340178546/PandaTool-by-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOOVERHEADSIMPLE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/73864099835694/OverheadNekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOGAMEPASS+OVERHEAD+CHATTAGS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/91983366960691/NekoOmen-Gamepass-Title-ChatTag" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOCONFESSBOARD</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/91526131965343/Confession-Wall-V1-by-YT-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOHANGOUT HIDE&amp;MUTE</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/138124952434940/HideMute-Jord-Refined-NekoOmen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOTOOLS</span><span class="tt">ROBLOX</span><a class="dl" href="https://create.roblox.com/store/asset/71315270833879/NekoTools" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="tc"><span class="tn">NEKOVISUALS</span><span class="tt">MEDIAFIRE</span><a class="dl" href="https://www.mediafire.com/file/lv6wwyd8m1ka92u/(PROTECT)+NEKOVISUALS.rbxm/file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Get</a></div>
+
+  <div class="ft"><p>by <a href="https://www.youtube.com/@Neko_Omen" target="_blank" rel="noopener">Neko_Omen</a> &mdash; Subscriber Only</p></div>
+ </div>
+</div>
+
+<script>
+(function(){
+ var ck=false,ct=0;
+ window.S=function(){ck=true;ct=Date.now();setTimeout(function(){document.getElementById('cb').disabled=false},3000)};
+ function msg(t,c,h){var e=document.getElementById('m1');e.className='ms v '+t;e.innerHTML=h}
+ window.C=function(){
+  if(!ck){msg('er','','&#9888; Click Subscribe first!');return}
+  if((Date.now()-ct)/1000<4){msg('er','','&#9888; Please subscribe on YouTube first.');return}
+  document.getElementById('cb').disabled=true;
+  var r=10;
+  msg('wt','','<span class="sp"></span> Verifying... <span class="cd" id="cd">'+r+'s</span>');
+  var iv=setInterval(function(){r--;var d=document.getElementById('cd');if(d)d.textContent=r+'s';if(r<=0){clearInterval(iv);go()}},1000);
+ };
+ function go(){
+  document.getElementById('s1').classList.add('dn');
+  msg('go','','&#10003; Verified! Welcome.');
+  document.getElementById('cb').style.display='none';
+  document.getElementById('sb').style.opacity='.4';
+  document.getElementById('sb').style.pointerEvents='none';
+  document.getElementById('s2').classList.remove('lk');
+  document.getElementById('s2').classList.add('dn');
+  document.getElementById('cat').classList.add('v');
+ }
+})();
+</script>
+</body>
+</html>
